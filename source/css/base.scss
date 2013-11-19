@@ -1,7 +1,17 @@
-/* Middleman Default CSS */
-@import "all"; 
-@import "normalize";
+/* 
+  The Liason project recommends that you keep your css in separate files and 
+  use this base.css file to import them -- don't add any CSS directly in this
+  file (trust me, you'll thank me later). 
+*/
 
 /* Bootstrap CSS */
 @import "bootstrap/css/bootstrap";
 @import "bootstrap/css/bootstrap-theme";
+@import "font-awesome/css/font-awesome";
+
+/* Theme CSS */
+@import "theme/middleman/middleman"; 
+@import "theme/middleman/normalize";
+
+/* Page-specific overrides */
+@import "pages/index";
