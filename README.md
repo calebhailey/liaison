@@ -1,6 +1,6 @@
-# Liason (a fancier name for a middleman)
+# Liason
 
-Liason is a heavily opinionated [Middleman][middleman] project, preconfigured with the latest [Bootstrap][bootstrap], [Font-Awesome][fontawesome], syntax highlighting, etc. For quickly putting together new static sites. 
+Liason is a fancier name for [Middleman][middleman]; it is also a heavily opinionated [Middleman][middleman] project, preconfigured with the latest [Bootstrap][bootstrap], [Font-Awesome][fontawesome], syntax highlighting, etc. For quickly putting together new static sites. 
 
 ## Getting started
 
