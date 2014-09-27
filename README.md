@@ -1,11 +1,12 @@
 # Liason
 
 Liason is a fancier sounding name for a [Middleman][middleman]; it is also a
-heavily opinionated [Middleman][middleman] project, preconfigured with
-the [Bootstrap][bootstrap] framework, [Font-Awesome][fontawesome] and
-[GitHub Octicons][octicons] for icons, [Kramdown][kramdown] for rendering
-markdown content, and [Rouge syntax highlighting][rouge] for all of your code
-highlighting needs.
+heavily opinionated [Middleman][middleman] project, which is setup with
+[HAML][haml] and [Sass][sass] (instead of [ERB][erb] & [Less][less]), and
+preconfigured with the [Bootstrap][bootstrap] framework,
+[Font-Awesome][fontawesome] and [GitHub Octicons][octicons] for icons,
+[Kramdown][kramdown] for rendering markdown content, and
+[Rouge syntax highlighting][rouge] for all of your code highlighting needs.
 
 If you agree with this collection of tools for building websites, the Liason
 project is intended to make it really easy to jumpstart new middleman projects.
@@ -40,7 +41,10 @@ all licenses used in teh Liason project:
   * Fonts are released under [SIL OFL 1.1][ofl] (Open Font License).
   * Code is released under the [MIT License][mit].
 
-
+[haml]:        http://haml.info/
+[sass]:        http://sass-lang.com/
+[erb]:         http://ruby-doc.org/stdlib-2.1.3/libdoc/erb/rdoc/ERB.html
+[less]:        http://lesscss.org/#
 [middleman]:   http://middlemanapp.com
 [bootstrap]:   http://getbootstrap.com
 [fontawesome]: http://fontawesome.io
