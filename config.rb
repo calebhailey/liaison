@@ -73,5 +73,13 @@ end
 # Liason-recommended settings
 ###
 
+set :markdown_engine, :kramdown
+set :markdown, :fenced_code_blocks => true, :smartypants => true, :autolink => true,
+    :quote => true, :footnotes => true
+
+# page "/docs",   :layout => "docs"
+# page "/docs/*", :layout => "docs"
+
 activate :livereload
 activate :directory_indexes
+activate :syntax
