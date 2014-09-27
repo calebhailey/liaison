@@ -1,5 +1,5 @@
 ---
 header: "Middleman is watching"
 content:
-  url: "http://middlemanapp.com"
+  url: "/docs"
   text: "Read Online Documentation"
