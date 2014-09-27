@@ -22,7 +22,8 @@ bundle exec middleman
 ```
 
 Now go visit `http://localhost:4567` from your browser. If you see a message
-that says "MIDDLEMAN IS WATCHING" you're all set! For an example of what
+that says "MIDDLEMAN IS WATCHING" you're all set! Click the "Example
+Documentation" button to view rendered Markdown content.
 
 ## License(s)
 
