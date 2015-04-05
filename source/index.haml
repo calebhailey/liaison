@@ -1,6 +1,7 @@
 = stylesheet_link_tag "pages/index";
 
 %div.welcome
+  %img{ src: data.index.img }
   %h1= data.index.header
   %p.doc
     %a.button.btn.btn-default{ href: data.index.content.url }

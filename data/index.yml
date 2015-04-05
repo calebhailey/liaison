@@ -1,5 +1,6 @@
 ---
 header: "Middleman is watching"
+img: "/img/middleman.png"
 content:
   url: "/docs"
   text: "Example Documentation (Markdown)"
