@@ -1,5 +1,17 @@
 ---
-metadata:
-  title: "Liason"
-  author: "Caleb Hailey"
-  
+title: "Liason"
+description: "A fancy name for a 'middleman'."
+author:
+  name: "Caleb Hailey"
+  url: "http://twitter.com/calebhailey"
+favicon:
+  img:
+    src: "img/middleman.png"
+
+opengraph:
+  type: "website"
+  site_name: "Liaison"
+  title: "A fancy name for a 'middleman'."
+  url: "http://github.com/calebhailey/liaison"
+
+google-analytics: "UA-39138312-9"
