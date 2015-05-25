@@ -1,10 +1,2 @@
-= stylesheet_link_tag "pages/index";
-
-%div.welcome
-  %img{ src: data.index.img }
-  %h1= data.index.header
-  %p.doc
-    %a.button.btn.btn-default{ href: data.index.content.url }
-      %i.fa.fa-book
-      = data.index.content.text
-      %i.octicon.octicon-book
+- data.index.each do |section|
+  = partial "layouts/section", locals: { section: section }

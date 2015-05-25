@@ -2,7 +2,6 @@
 
 body {
   background: #d4d4d4 url("../img/background.png");
-  text-align: center;
   font-family: sans-serif;
 }
 
@@ -42,6 +41,7 @@ h1 {
 .welcome {
   -webkit-animation-name: welcome;
   -webkit-animation-duration: .9s;
+  text-align: center;
 }
 
 @-webkit-keyframes welcome {

@@ -1,6 +1,10 @@
 ---
-header: "Middleman is watching"
-img: "/img/middleman.png"
-content:
-  url: "/docs"
-  text: "Example Documentation (Markdown)"
+- id: "welcome"
+  class: "welcome"
+  content:
+    - layout: "welcome"
+      header: "Middleman is watching"
+      img: "/img/middleman.png"
+      button:
+        url: "/docs"
+        text: "Example Documentation (Markdown)"

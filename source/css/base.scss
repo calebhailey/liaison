@@ -1,15 +1,13 @@
-/*
-  The Liason project recommends that you keep your css in separate files and
-  use this base.css file to import them -- don't add any CSS directly in this
-  file (trust me, you'll thank me later).
-*/
-
-/* Bootstrap CSS */
-@import "bootstrap";
+// Bootstrap CSS
+@import "bootstrap/variables";
 @import "bootstrap-sprockets";
+@import "bootstrap";
 
-/* Liason CSS */
+// Liason CSS
 @import "fonts";
 @import "normalize";
 @import "highlighting";
 @import "markdown";
+
+// Custom Theme
+@import "theme";

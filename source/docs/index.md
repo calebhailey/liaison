@@ -17,3 +17,5 @@ echo 'Hello World'
 [kramdown]: http://kramdown.gettalong.org/
 [syntax]:   https://github.com/middleman/middleman-syntax
 [rouge]:    https://github.com/jneen/rouge
+
+Click [here](/) to go back to the home page.
