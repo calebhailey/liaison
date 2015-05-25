@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby "2.1.0"
 
 gem "bootstrap-sass"
-gem "middleman"
+gem "middleman", "~> 3.3.12"
 gem "middleman-livereload"
 gem "middleman-syntax"
 gem "kramdown"
