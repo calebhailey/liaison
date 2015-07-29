@@ -70,7 +70,7 @@ configure :build do
 end
 
 ###
-# Liason-recommended settings
+# Liaison-recommended settings
 ###
 
 set :markdown_engine, :kramdown
