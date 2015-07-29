@@ -3,6 +3,10 @@
   = partial "layouts/head"
 
   %body
-    = yield
+    - if data[:nav]
+      = partial "layouts/#{data[:nav][:layout]}", locals: { content: content[:layout] }
+
+    %div.content
+      = yield
 
   = partial "layouts/tail"

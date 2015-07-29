@@ -1,8 +1,8 @@
 ---
-- id: "welcome"
-  class: "welcome"
+- id: "middleman"
+  class: "middleman"
   content:
-    - layout: "welcome"
+    - layout: "middleman"
       header: "Middleman is watching"
       img: "/img/middleman.png"
       button:

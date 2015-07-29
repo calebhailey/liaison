@@ -1,17 +1,23 @@
 - if content.kind_of?(Hash)
-  %div{ class: content["class"] }
-    - if content.has_key?("data")
-      = partial "layouts/data", locals: { content: content.data }
-    - else
-      = partial "layouts/#{content.layout || "feature"}", locals: { content: content }
+  %div{ class: content["class"], id: content[:id] }
+    - if content[:data]
+      - content[:data].each do |data|
+        = partial "layouts/data", locals: { content: data }
+    = partial "layouts/#{content[:layout] || "default"}", locals: { content: content }
 
 - elsif content.kind_of?(Array)
-  %div.row
+  %div.row.content-row
     - @width = 12 / content.count
     - content.each do |item|
       - if item.kind_of?(Hash)
-        - if item.has_key?("class")
-          - item["class"] = "#{item["class"]} col-sm-#{item.width || @width}"
+        - if item[:class]
+          - item[:class] = "#{item[:class]} col-sm-offset-#{item[:offset] || "0"} col-sm-#{item[:width] || @width}"
         - else
-          - item["class"] = "col-sm-#{item.width || @width}"
-      = partial "layouts/loader", locals: { content: item }
+          - item[:class] = "col-sm-#{item[:width] || @width} col-sm-offset-#{item[:offset] || "0"}"
+      = partial "layouts/display", locals: { content: item }
+
+- elsif content.kind_of?(String)
+  = partial "layouts/elements/p", locals: { content: content }
+
+- else
+  = partial "layouts/default", locals: { content: content }
