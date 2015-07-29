@@ -1,6 +1,6 @@
-# Liason
+# Liaison
 
-Liason is a fancier sounding name for a [Middleman][middleman]; it is also a
+Liaison is a fancier sounding name for a [Middleman][middleman]; it is also a
 heavily opinionated [Middleman][middleman] project, which is setup with
 [HAML][haml] and [Sass][sass] (instead of [ERB][erb] & [Less][less]), and
 preconfigured with the [Bootstrap][bootstrap] framework,
@@ -8,7 +8,7 @@ preconfigured with the [Bootstrap][bootstrap] framework,
 [Kramdown][kramdown] for rendering markdown content, and
 [Rouge syntax highlighting][rouge] for all of your code highlighting needs.
 
-If you agree with this collection of tools for building websites, the Liason
+If you agree with this collection of tools for building websites, the Liaison
 project is intended to make it really easy to jumpstart new middleman projects.
 
 ## Getting started
@@ -16,7 +16,7 @@ project is intended to make it really easy to jumpstart new middleman projects.
 Clone the repo, then:
 
 ``` bash
-cd liason
+cd liaison
 bundle install
 bundle exec middleman
 ```
@@ -29,9 +29,9 @@ Documentation" button to view rendered Markdown content.
 
 Please refer to the corresponding project licenses for the latest information
 regarding their licensing requirements. For reference, here is a summary of
-all licenses used in teh Liason project:
+all licenses used in teh Liaison project:
 
-* The Liason project (like [Middleman][middleman]) is released under the
+* The Liaison project (like [Middleman][middleman]) is released under the
   [MIT License](mit).
 * [Bootstrap][bootstrap] is released under the [Apache 2.0 license][apache-2.0].
 * [FontAwesome][fontawesome]
