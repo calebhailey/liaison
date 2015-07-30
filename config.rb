@@ -69,6 +69,13 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+# Middleman Deploy configuration
+activate :deploy do |deploy|
+  # see: https://github.com/middleman-contrib/middleman-deploy for other options
+  deploy.method = 'git'
+  deploy.branch = 'gh-pages'
+end
+
 ###
 # Liaison-recommended settings
 ###

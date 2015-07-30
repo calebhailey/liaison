@@ -5,8 +5,12 @@ ruby "2.1.0"
 
 gem "bootstrap-sass"
 gem "middleman", "~> 3.3.12"
-gem "middleman-livereload"
 gem "middleman-syntax"
+gem "middleman-livereload"
+gem "middleman-favicon-maker"
+gem "middleman-smusher"
+gem "middleman-deploy"
+gem "middleman-blog"
 gem "kramdown"
 
 # For faster file watcher updates on Windows:
