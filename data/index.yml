@@ -2,7 +2,7 @@
 - id: "middleman"
   class: "middleman"
   content:
-    - layout: "middleman"
+    - partial: "middleman"
       header: "Middleman is watching"
       img: "/img/middleman.png"
       button:

@@ -1,0 +1,8 @@
+- if content.kind_of?(Hash)
+  %input{ type: "hidden",
+          id: content[:id],
+          name: content[:name] || content[:label] || content[:id] || "",
+          value: content[:value] }
+- elsif content.kind_of?(Array)
+  - content.each do |data|
+    = partial "partials/data", locals: { content: data }

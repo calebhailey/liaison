@@ -4,7 +4,7 @@
     = stylesheet_link_tag section[:stylesheet]
   %div.container
     - if section[:data]
-      = partial "layouts/data", locals: { content: section[:data] }
+      = partial "partials/data", locals: { content: section[:data] }
     - if section[:content]
       - section[:content].each do |content|
-        = partial "layouts/display", locals: { content: content }
+        = partial "partials/display", locals: { content: content }

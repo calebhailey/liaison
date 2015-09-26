@@ -1,0 +1,21 @@
+%div.content-block{ class: content[:class], id: content[:id] }
+  = stylesheet_link_tag "content-block"
+  = partial "partials/heading", locals: { content: content }
+  - if content[:content]
+    %div.content-body
+      - if content[:content].kind_of?(String)
+        = partial "partials/p", locals: { content: content[:content] }
+      - else
+        - content[:content].each do |item|
+          - if item.kind_of?(Hash)
+            = partial "partials/display", locals: { content: item }
+
+          - elsif item.kind_of?(Array)
+            - columns = content[:columns] || 1
+            = partial "partials/list", locals: { items: item, columns: columns }
+
+          - else
+            = partial "partials/p", locals: { content: item }
+  - if content[:img]
+    %div.content-image
+      = partial "partials/img", locals: { img: content[:img] }

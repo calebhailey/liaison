@@ -13,10 +13,10 @@
   = stylesheet_link_tag "base"
 
   // "Favicons"
-  = partial "layouts/favicons", locals: { content: data.site.favicon }
+  = partial "partials/favicons", locals: { content: data.site.favicon }
 
   // "OpenGraph"
-  = partial "layouts/opengraph", locals: { content: data.site.opengraph }
+  = partial "partials/opengraph", locals: { content: data.site.opengraph }
 
   // "HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries"
   /[if lt IE 9]

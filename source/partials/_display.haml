@@ -2,8 +2,8 @@
   %div{ class: content["class"], id: content[:id] }
     - if content[:data]
       - content[:data].each do |data|
-        = partial "layouts/data", locals: { content: data }
-    = partial "layouts/#{content[:layout] || "default"}", locals: { content: content }
+        = partial "partials/data", locals: { content: data }
+    = partial "partials/#{content[:partial] || "default"}", locals: { content: content }
 
 - elsif content.kind_of?(Array)
   %div.row.content-row
@@ -14,10 +14,10 @@
           - item[:class] = "#{item[:class]} col-sm-offset-#{item[:offset] || "0"} col-sm-#{item[:width] || @width}"
         - else
           - item[:class] = "col-sm-#{item[:width] || @width} col-sm-offset-#{item[:offset] || "0"}"
-      = partial "layouts/display", locals: { content: item }
+      = partial "partials/display", locals: { content: item }
 
 - elsif content.kind_of?(String)
-  = partial "layouts/elements/p", locals: { content: content }
+  = partial "partials/p", locals: { content: content }
 
 - else
-  = partial "layouts/default", locals: { content: content }
+  = partial "partials/default", locals: { content: content }
